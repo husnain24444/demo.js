@@ -1,4 +1,4 @@
-//Question 1
+                                    //Question 1
 // let arr=[-1,-2,-5,0,122,22,223];
 // let sum=(arr)=>{
 //     let sum=0;
@@ -12,7 +12,7 @@
 // }
 // console.log(sum(arr));
 
-//Question 2
+                                    //Question 2
 
 // const name='ali husnain';
 
@@ -25,7 +25,7 @@
 // }
 // console.log(reverse(name));
 
-//Qusedtion 3
+                                    //Qusedtion 3
 
 // let chk_prime=(a)=>{
 //     console.log(`Number is ${a}:`);
@@ -42,7 +42,7 @@
 // }
 // console.log(chk_prime(77));
 
-//Question 4
+                                    //Question 4
 
 // let arr=[187,947,254,295,7,111,234,927];
 // let find=(arr)=>{
@@ -51,7 +51,7 @@
 // }
 // console.log(find(arr));
 
-//Question 5
+                                    //Question 5
 
 // const name=['ali','husnain','qasim','Asim','Abdul Rehman'];
 // let str=(name)=>{
@@ -66,7 +66,7 @@
 // }
 // console.log(str(name));
 
-//Question 6
+                                    //Question 6
 // const students=[{name:'ali',grade:79},{name:'Husnain',grade:87},{name:'Qasim',grade:57},{name:'Ahmed',grade:99}];
 // let sort_obj=(students)=>{
 //     students.sort((a,b)=>b.grade-a.grade);
@@ -75,7 +75,7 @@
 // console.log(sort_obj(students));
 
 
-//Question 7
+                                    //Question 7
 // const str1="My name is husnain";
 // let vovels=(str1)=>{
 //     const vowels=['a','e','i','o','u'];
@@ -88,7 +88,7 @@
 // }
 // console.log(vovels(str1));
 
-//Question 8
+                                    //Question 8
 // const number = 8;
 // let fact=(n)=>{
 //     if(n<0){
@@ -106,7 +106,7 @@
 //     }
 // }
 // fact(number);
-//Qusetion # 9
+                                    //Qusetion # 9
 // const arr=[1,2,3,4,5,6,7,8,9];
 // let avg=(arr)=>{
 //     var sum=0;
@@ -117,7 +117,7 @@
 // }
 // console.log(`Average of the numbers of given array is: ${avg(arr)}`);
 
-//Question #10
+                                    //Question #10
 
 // let GCD=(a,b)=>{
 //     if(a<b){
@@ -140,7 +140,7 @@
 // }
 // console.log(`The GCD of given two numbers is: ${GCD(78,96)}`);
 
-//Question # 11
+                                    //Question # 11
 // function higest_Vowels(str) {
 //     let vowels = ['a','e','i','o','u','A','E','I','O','U'];
 //     let words = str.split(" ");
@@ -166,7 +166,7 @@
 //   console.log(higest_Vowels("University of gujrat main Campus"));
 
 
-//Question#12
+                                    //Question#12
 // let check_palindrome=(str)=>{
 //     let string=""
 //     let new_str=str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
@@ -184,7 +184,7 @@
 // check_palindrome("Ra!c#e$car")
 
 
-//Question # 13
+                                    //Question # 13
 // var arr1=[1,2,3]
 // var arr2=[4,5,6]
 
@@ -209,7 +209,7 @@
 // }
 
 
-//Question #14
+                                    //Question #14
 // let febnoci=(num)=>{
 //     if(num<0){
 //         console.log("Invalid Number");
@@ -232,7 +232,7 @@
 // febnoci(50);
 
 
-//Question #15
+                                    //Question #15
 
 // let remove_duplicate=(arr)=>{
 //     const new_arr=[];
@@ -247,7 +247,7 @@
 // const unique_arr=remove_duplicate(arr);
 // console.log(unique_arr);
 
-//Question #16
+                                    //Question #16
 // let most_f_char=(str)=>{
 //     let obj={}
 //     let most_r_char=''
@@ -265,7 +265,9 @@
 //     return most_r_char
 // }
 // console.log(most_f_char("Hello World"))
-//Question #17
+
+                                    //Question #17
+
 // const products=[
 //     { name:"Product 1", price:10, quantity:5 },
 //     { name:"Product 2", price:20, quantity:3 },
@@ -280,7 +282,7 @@
 // }
 // console.log(total_value(products));
 
-//Question #18
+                                    //Question #18
 
 // let is_perfect=(num)=>{
 //     let sum=0
@@ -305,7 +307,7 @@
 // const sort_arr=sort(string_arr)
 // console.log(sort_arr)
 
-//Question #20
+                                    //Question #20
 // let is_anagram=(str1,str2)=>{
 //     if(str1.length!==str2.length){return false}
 //     let strobj={}
@@ -322,7 +324,7 @@
 // let str2='lloehot'
 // console.log(is_anagram(str1,str2))
 
-//Question 21
+                                    //Question 21
 // let arr=[1,2,3,4,-1,2,5,6,11,6];
 // let long_inc_subarr=(arr)=>{
 //     start=0;
@@ -350,14 +352,214 @@
 //     for(let j=start;j<=end;j++){
 //         console.log(arr[j]);    
 //     }
-    
 // }
 // long_inc_subarr(arr);
 
-//Question 22
-//Question 30
 
-//Question 31
+                                    //Question 22
+
+// //expand around center algorithm to find palindromic substring
+// let longestPalindrome=(s)=>{
+//     let longest = "";  
+//     let Palindrome_substring=(left, right)=>{
+//       while (left >= 0 && right < s.length && s[left] === s[right]) {
+//         left--;
+//         right++;
+//       }
+//       return s.substring(left + 1,right);
+//     }
+// //For odd-length palindrome
+//     for (let i = 0; i < s.length; i++) {
+//     const oddPalindrome = Palindrome_substring(i, i);
+// //For even-length palindrome
+//     const evenPalindrome = Palindrome_substring(i, i + 1);
+      
+//     if (oddPalindrome.length > longest.length) {
+//         longest = oddPalindrome;
+//     }
+//     if (evenPalindrome.length > longest.length) {
+//         longest = evenPalindrome;
+//     }
+//     }
+//     return longest;
+//   }
+  
+//   const input = "123babab321";
+//   const result = longestPalindrome(input);
+//   console.log(result);
+
+                                    //Question 23
+
+// let group_of_anagaram=(str)=>{
+//     const map=new Map()
+//     for(let word of str){
+//         const sort_key=word.split("").sort().join("")
+//         if(map.has(sort_key)){
+//             map.get(sort_key).push(word)
+//         }
+//         else{
+//             map.set(sort_key,[word])
+//         }
+//     }
+//     //const result=Array.from(map.values())
+//     const result = [...map.values()];
+//     return result;
+// }
+// str=['top','pot','otp','silent','listen']
+// const res=group_of_anagaram(str)
+// console.log(res)
+
+                                    //Question 24
+
+//     mergeSort=(arr)=>{
+//     //base case
+//     if (arr.length <= 1) {
+//       return arr;
+//     }
+//     //divide the array
+//     const mid = Math.floor(arr.length / 2);
+//     //assign the length
+//     const left_arr=arr.slice(0, mid);
+//     const right_arr=arr.slice(mid);
+//     //recurison perform
+//     const sortedLeft = mergeSort(left_arr);
+//     const sortedRight = mergeSort(right_arr);
+
+//     return merge_two_sort(sortedLeft, sortedRight);
+//   }
+
+//     //merge the two arrays
+//     const merge_two_sort=(left,right)=>{
+//     const merged_arr = [];
+
+//     let i=0;//indexs of left arr
+//     let j=0;//indexs of right arr
+  
+//     //Merge the two sorted arrays
+//     while (i<left.length && j<right.length) {
+//       if (left[i] <= right[j]) {
+//         merged_arr.push(left[i]);
+//         i++;
+//       } else {
+//         merged_arr.push(right[j]);
+//         j++;
+//       }
+//     }
+  
+//     //if values left in an array
+//     if(i<left.length){
+//     while (i<left.length) {
+//       merged_arr.push(left[i]);
+//       i++;
+//     }
+// }   
+//     else{  
+//     while (j< right.length) {
+//       merged_arr.push(right[j]);
+//       j++;
+//     }
+// }
+  
+//     return merged_arr;
+//   }
+  
+//   const numbers = [9,2,13,7,4,11,6,3,1,5];
+//   const result = mergeSort(numbers);
+//   console.log(result);
+
+                                    //Question 25
+// const make_triangle=(num)=>{
+//     let triangle=[];
+//     for (let i=0;i<num;i++) {
+//       let row=[];
+//       for (let j=0;j<=i;j++) {
+//         if (j===0||j===i) {
+//           row.push(1);
+//         } 
+//         else {
+//           row.push(triangle[i-1][j-1]+triangle[i-1][j]);
+//         }
+//       }
+//       triangle.push(row);
+//     }
+//     return triangle;
+//   }
+  
+// const num=6;
+// const result=make_triangle(num);
+// console.log(result);
+
+                                    //Question 26
+
+// const maxSubarraySum=(arr)=>{
+//     let cur_max=0;
+//     let max_sum=0;  
+//     for (let i=0;i<arr.length;i++) {
+//       cur_max=cur_max+arr[i];
+//       if (cur_max<0) {
+//         cur_max=0;
+//       } 
+//       else if (max_sum<cur_max) {
+//         max_sum=cur_max
+//       }
+//     }
+//     return max_sum
+//   }
+//   const arr=[1,-2,3,5,7-3,4,7,8,5]
+//   const result=maxSubarraySum(arr);
+//   console.log(result);
+
+                                    //Question 28
+// function isHappyNumber(num){
+//     let current = num;
+//     let seen=new Set();
+  
+//     while (current!==1 && !seen.has(current)) {
+//       seen.add(current);
+//       current = sumOfSquaresOfDigits(current);
+//     }
+//     return current === 1;
+//   }
+  
+//     const sumOfSquaresOfDigits=(number)=>{
+//     let sum = 0;
+//     while (number > 0) {
+//       const digit=number%10;
+//       sum+=digit*digit;
+//       number = Math.floor(number/10);
+//     }
+  
+//     return sum;
+//   }
+  
+//   const num=19;
+//   const result=isHappyNumber(num);
+//   console.log(isHappy);
+
+
+                                    //Question 30
+
+// const Sieve=(n)=>{
+//     const isPrime=new Array(n + 1).fill(true);
+//     for(let i=2;i<=n;i++){
+//         if(isPrime[i]){
+//             for(let j=i*i;j<=n;j+=i){
+//                 isPrime[j]=false
+//             }
+//         }
+//     }
+//     let prim_arr=[]
+//     for(let i=2;i<=n;i++){
+//         if(isPrime[i]){
+//             prim_arr.push(i)
+//         }
+//     }
+//     return prim_arr
+// }
+// const result=Sieve(30)
+// console.log(result)
+
+                                    //Question 31
 // let divideNumbers=(num1,num2)=>{
 //     try {
 //         if(num2==0){
@@ -372,7 +574,7 @@
 // let res=divideNumbers(10,0)
 // console.log(res)
 
-//Question 32
+                                    //Question 32
 // let findLargestElement=(arr)=>{
 //     try {
 //         if(arr.length!=0 && Array.isArray(arr)){
@@ -397,30 +599,63 @@
 // let res=findLargestElement(arr)
 // console.log(`Result is ${res}`)
 
+                                    //Question 33
+// async function delayedsum(n1,n2){
+//   let dely=await new Promise((resolve)=>setTimeout(resolve,1000))
+//   return n1+n2
+// }
 
-//Question 33
-function wait (ms)
-{
-    return  new Promise(resolve=>setTimeout(resolve, ms));
-}
+// let sum=async()=>{
+//   try{
+//     let sum=await  delayedsum(2,3)
+//     console.log(`sum of two numbers is ${sum}`)
+//   }
+//   catch(error){
+//     console.log(error)
+//   }
+// }
+// sum();
+                                    //Question 34
 
-async function delayedSum(num1, num2)
-{
-    await wait(1000);
-    return num1+num2;
-}
+// let sum=(n1,n2)=>{
+//     return n1+n2
+// }
+// console.log(sum(12,57))
 
-async function run()
-{
-    try {
-        let result=await delayedSum(5,7);
-        console.log(result);
-    } catch (error) {
-        console.error(error);
-    }
-}
-run();
-//Question 34
-//Question 35
-//Question 36
-//Question 37
+                                    //Question 35
+
+// let display=(obj)=>{
+//     for(let key in obj){
+//         console.log(`My ${key} is ${obj[key]}`)
+//     }
+// }
+// const obj={
+//     name:'Husnain Ali',
+//     Rollno:210141,
+//     Age:21,
+//     skill:'Developer',
+//     Hobby:'Coding'
+
+// }
+// display(obj)
+
+                                    //Question 36
+
+// let factoriol=(num)=>{
+//     if(num==0){return 1}
+//     else{
+//     return num*factoriol(num-1)
+//     }
+// }
+// let num=6
+// console.log(factoriol(num))
+
+                                    //Question 37
+
+// let display_arr=(arr)=>{
+//     for(let i=0;i<arr.length;i++){
+//         console.log(`${i+1} elemnt of array is ${arr[i]}`)
+//     }
+// }
+// const arr=[3,5,7,5,3,55,7,5]
+// display_arr(arr)
